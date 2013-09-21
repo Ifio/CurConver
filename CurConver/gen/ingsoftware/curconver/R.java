@@ -47,6 +47,7 @@ public final class R {
         public static final int bttConvert=0x7f050005;
         public static final int bttDefaultFrom=0x7f050006;
         public static final int bttDefaultTo=0x7f050007;
+        public static final int currencyList=0x7f050008;
         public static final int hello_world=0x7f050002;
         public static final int titleFrom=0x7f050003;
         public static final int titleTo=0x7f050004;

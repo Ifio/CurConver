@@ -9,4 +9,5 @@
 	<string name="bttConvert">Convert</string> 
 	<string name="bttDefaultFrom">USD</string>
 	<string name="bttDefaultTo">COP</string>
+	<string name="currencyList">Currency Selecter</string>
 </resources>

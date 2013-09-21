@@ -7,7 +7,7 @@
     android:animateLayoutChanges="true"
     android:background="#334433"
     android:onClick="selectItem"
-     >
+    >
 	    
 
 </ListView>
