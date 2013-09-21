@@ -25,14 +25,14 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f080008;
-        public static final int bttConvert=0x7f080007;
+        public static final int bttConvert=0x7f080001;
         public static final int bttFrom=0x7f080005;
-        public static final int bttTo=0x7f080006;
-        public static final int editText1=0x7f080002;
-        public static final int editText2=0x7f080004;
+        public static final int bttTo=0x7f080004;
         public static final int listView=0x7f080000;
-        public static final int tvFrom=0x7f080001;
+        public static final int tvFrom=0x7f080007;
         public static final int tvTo=0x7f080003;
+        public static final int txtFromBox=0x7f080006;
+        public static final int txtToBox=0x7f080002;
     }
     public static final class layout {
         public static final int activity_cur_list=0x7f030000;

@@ -7,85 +7,78 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainPage" >
-
-    <TextView
-        android:id="@+id/tvFrom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_marginBottom="40dp"
-        android:text="@string/titleFrom" />
-
-    <TextView
-        android:id="@+id/tvTo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_marginBottom="14dp"
-        android:text="@string/titleTo" />
+    
+        <!-- android:background="#000000" 
+        android:textColor="#FFFFFF" -->
 
     <Button
-        android:id="@+id/bttFrom"
-        android:layout_width="wrap_content"
+        android:id="@+id/bttConvert"
+        android:layout_width="220sp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/editText1"
-        android:layout_toLeftOf="@+id/editText1"
-        android:text="@string/bttDefaultFrom"
-        android:textSize="15sp"
-        android:onClick="openSelecter" />
+        android:layout_below="@+id/txtToBox"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@+id/tvTo"
+        android:text="@string/bttConvert" />
 
     <Button
         android:id="@+id/bttTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bttConvert"
         android:layout_alignLeft="@+id/bttFrom"
-        android:layout_below="@+id/tvTo"
-        android:layout_toLeftOf="@+id/editText2"
+        android:layout_below="@+id/txtFromBox"
+        android:layout_marginTop="22dp"
+        android:onClick="openSelecter"
         android:text="@string/bttDefaultTo"
-        android:textSize="15sp"
-        android:onClick="openSelecter" />
+        android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/editText1"
+    <Button
+        android:id="@+id/bttFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tvTo"
-        android:layout_alignLeft="@+id/tvTo"
-        android:layout_marginBottom="37dp"
-        android:ems="10"
-        android:inputType="number"
-        android:focusable="true" />
+        android:layout_alignLeft="@+id/tvFrom"
+        android:layout_below="@+id/tvFrom"
+        android:onClick="openSelecter"
+        android:text="@string/bttDefaultFrom"
+        android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/editText2"
+    <TextView
+        android:id="@+id/tvTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/bttTo"
+        android:layout_below="@+id/bttFrom"
+        android:text="@string/titleTo" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/titleFrom" />
+
+    <EditText
+        android:id="@+id/txtToBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bttTo"
+        android:layout_toRightOf="@+id/bttTo"
         android:ems="10"
         android:inputType="number" >
 
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/bttConvert"
-        android:layout_width="220sp"
+    <EditText
+        android:id="@+id/txtFromBox"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bttTo"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="38dp"
-        android:text="@string/bttConvert"
-        android:onClick=""/>
-    
-        <!-- android:background="#000000" 
-        android:textColor="#FFFFFF" -->
-        
+        android:layout_above="@+id/tvTo"
+        android:layout_alignLeft="@+id/txtToBox"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="number" />
 
 </RelativeLayout>
